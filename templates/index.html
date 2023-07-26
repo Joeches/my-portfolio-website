@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo">
+
+      </div>
+      <div class="toggle-btn">&#9776;</div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="container">
+      <h1>Welcome to JoeTech Digitals</h1>
+      <p>Hi, I'm Ochelebe Joseph, a passionate python developer, and Full Stack Engineer</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Flask GPT</h3>
+        <p>Flask Chatbot is an advanced web application built using Flask, SQLite, and OpenAI's ChatGPT-3 API. It provides a conversational chatbot interface where users can interact with an AI-powered bot to obtain information, ask questions, and engage in natural language conversations.</p>
+        <p>Features:</p>
+        <ul>
+          <li>User Registration and Authentication: Users can create accounts, log in, and log out securely. User credentials are stored in a SQLite database, and password hashes are used for enhanced security. Real-time Chat Interface: Users can chat with the AI-powered chatbot in a real-time interface. Messages are sent asynchronously and displayed in a visually appealing and interactive chat log.
+
+Natural Language Processing: The chatbot leverages OpenAI's ChatGPT-3 API to process and generate natural language responses. It utilizes advanced language models to understand user queries and provide accurate and relevant information.
+
+Persistent Chat History: The chat history is stored in the SQLite database, allowing users to view past conversations and resume chat sessions seamlessly.
+
+Responsive Design: The web application is designed to be responsive and compatible with various devices, ensuring a seamless user experience across desktop and mobile platforms.
+
+User-Friendly Interface: The user interface is designed with a modern and intuitive layout, featuring dynamic animations, colorful speech bubbles, and an interactive chat log.</li>
+        </ul>
+        <a href="https://github.com/Joeches/Flask-gpt/tree/master" target="_blank">GitHub</a>
+        <a href="https://www.youtube.com/watch?v=3AnwPhULW8c&t=3s" target="_blank">Watch Demo</a>
+
+      </div>
+      <div class="project">
+        <h3>Breast-cancer-checker</h3>
+        <p>A breast cancer checker application implemented using Streamlit. The application uses a Random Forest Classifier to predict whether a breast tumor is benign (non-cancerous) or malignant (cancerous) based on patient input.</p>
+        <a href="https://github.com/Joeches/breast-cancer-checker/tree/master" target="_blank">GitHub</a></div>
+    </div>
+  </section>
+   <div class="project">
+        <h3>Smart Diagnose Triage (S.D.T.)</h3>
+        <p>Smart Diagnose Triage (S.D.T.) is a chatbot-based medical diagnosis system that utilizes
+OpenAI's GPT-3 API to generate diagnoses based on patient symptoms.
+It provides users with an interactive interface to input patient information
+and receive accurate medical diagnoses and expert recommendations.
+The system also incorporates text-to-speech functionality to facilitate
+easy communication of diagnoses and recommendations.
+
+Key Features
+
+. Interactive chatbot interface for collecting patient information
+. Utilizes OpenAI's GPT-3 API for generating diagnoses
+. Retrieves medical expert recommendations based on the diagnosis
+. Text-to-speech functionality for audio playback of diagnoses and recommendations
+. Displays histogram of patient ages and symptom durations for visualization
+. Includes a database to store patient information for future reference</p>
+        <a href="https://github.com/Joeches/Smart-Diagnose-Triage/tree/master" target="_blank">GitHub</a>
+        <a href="https://www.youtube.com/embed/6HGuIPXfNzs?start=14" target="_blank">Watch Demo</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <div id="about-content">
+        <p>Hello there! I'm Joseph Ochelebe, a seasoned Python developer with over 5 years of experience in the industry. My journey into the world of programming began with an immense passion for technology and a desire to create innovative solutions that can positively impact the world.</p>
+        <p>My expertise lies in various domains, including machine learning fundamentals and data science. I have successfully leveraged these skills to develop cutting-edge applications, providing insights and intelligence from data to make informed decisions. Additionally, I have hands-on experience with cloud computing, particularly in Google Cloud Platform (GCP), where I have worked as a core infrastructural junior engineer, ensuring the robustness and efficiency of cloud-based systems.</p>
+        <p>My proficiency extends to containerization and orchestration with Docker, allowing me to create scalable and portable applications. Moreover, my work in the robotics field has been a significant highlight of my career. I take pride in being a robotics application developer, with expertise in Universal Robots cobots. This experience has granted me insights into the world of automation and robotics, enabling me to build intelligent systems that can interact and collaborate with humans effectively.</p>
+        <p>At 33 years old, I have had the privilege of encountering diverse challenges and experiences throughout my career. As a professional prompt engineer, I thrive on tackling complex problems with creative solutions. I'm a firm believer in continuous learning and staying updated with the latest technological advancements, as this allows me to deliver cutting-edge solutions to my clients and employers.</p>
+        <p>When I'm not coding or immersed in the world of technology, you can find me exploring new hobbies, engaging in outdoor activities, or contributing to the open-source community. I believe in the power of teamwork and collaboration, and I always look forward to being part of projects that foster a positive and supportive work environment.</p>
+        <p>As I look ahead, I am excited about the possibilities that lie on the horizon. With each passing day, my passion for programming and robotics grows stronger, driving me to explore new frontiers and create solutions that make a real difference in people's lives.</p>
+        <p>Thank you for taking the time to get to know me a little better. If you're interested in collaborating on exciting projects or discussing anything related to technology, feel free to reach out. Let's create a future where technology empowers and enriches humanity!</p>
+      </div>
+      <button id="toggle-button">Show More</button>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you have any questions or would like to discuss potential projects, feel free to reach out to me using the contact information below:</p>
+      <ul class="contact-info">
+        <li>JoeTech Digitals</li>
+        <li>joechesmusic@gmail.com</li>
+        <li>+2348163399026</li>
+        <!-- Add more contact information as needed -->
+      </ul>
+    </div>
+  </section>
+
+  <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+
+</html>
