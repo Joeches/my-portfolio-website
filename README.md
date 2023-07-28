@@ -6,7 +6,7 @@ This is my personal portfolio website to showcase my projects and skills. It is 
 
 To run this project locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/yourusername/my-portfolio.git`
+1. Clone the repository: `git clone https://github.com/joeches/my-portfolio-website.git`
 2. Install the required packages: `pip install -r requirements.txt`
 3. Run the Flask app: `python app.py`
 4. Access the website in your web browser at `http://localhost:5000/`
